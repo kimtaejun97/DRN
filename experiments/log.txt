@@ -1,0 +1,39 @@
+The number of parameters is 9.83M
+
+Evaluation:
+[face_test x4]	PSNR: 30.44 (Best: 30.44 @epoch 1)
+Total time: 3.33s
+
+The number of parameters is 9.83M
+
+Evaluation:
+The number of parameters is 9.83M
+
+Evaluation:
+The number of parameters is 9.83M
+
+Evaluation:
+The number of parameters is 9.83M
+
+Evaluation:
+The number of parameters is 9.83M
+The number of parameters is 9.83M
+
+Evaluation:
+The number of parameters is 9.83M
+
+Evaluation:
+The number of parameters is 9.83M
+The number of parameters is 9.83M
+
+Evaluation:
+[face_test x4]	PSNR: 44.46 (Best: 44.46 @epoch 1)
+Total time: 13778.20s
+
+The number of parameters is 9.83M
+The number of parameters is 9.83M
+
+Evaluation:
+[face_test x4]	PSNR: 38.87 (Best: 38.87 @epoch 1)
+Total time: 363.04s
+
