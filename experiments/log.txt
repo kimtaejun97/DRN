@@ -1,0 +1,6 @@
+The number of parameters is 9.83M
+
+Evaluation:
+[face_test x4]	PSNR: 30.44 (Best: 30.44 @epoch 1)
+Total time: 3.33s
+

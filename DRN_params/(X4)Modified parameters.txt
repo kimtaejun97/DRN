@@ -1,0 +1,2676 @@
+name:sub_mean.weight 
+param.shape:torch.Size([3, 3, 1, 1]) 
+param.shape:9 
+======================================
+name:sub_mean.bias 
+param.shape:torch.Size([3]) 
+param.shape:3 
+======================================
+name:head.weight 
+param.shape:torch.Size([20, 3, 3, 3]) 
+param.shape:540 
+======================================
+name:head.bias 
+param.shape:torch.Size([20]) 
+param.shape:20 
+======================================
+name:down.0.dual_module.0.0.weight 
+param.shape:torch.Size([20, 20, 3, 3]) 
+param.shape:3600 
+======================================
+name:down.0.dual_module.1.weight 
+param.shape:torch.Size([40, 20, 3, 3]) 
+param.shape:7200 
+======================================
+name:down.1.dual_module.0.0.weight 
+param.shape:torch.Size([40, 40, 3, 3]) 
+param.shape:14400 
+======================================
+name:down.1.dual_module.1.weight 
+param.shape:torch.Size([80, 40, 3, 3]) 
+param.shape:28800 
+======================================
+name:up_blocks.0.0.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.0.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.0.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.0.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.0.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.0.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.0.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.0.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.1.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.1.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.1.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.1.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.1.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.1.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.1.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.1.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.2.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.2.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.2.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.2.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.2.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.2.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.2.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.2.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.3.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.3.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.3.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.3.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.3.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.3.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.3.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.3.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.4.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.4.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.4.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.4.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.4.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.4.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.4.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.4.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.5.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.5.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.5.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.5.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.5.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.5.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.5.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.5.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.6.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.6.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.6.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.6.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.6.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.6.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.6.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.6.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.7.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.7.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.7.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.7.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.7.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.7.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.7.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.7.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.8.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.8.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.8.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.8.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.8.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.8.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.8.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.8.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.9.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.9.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.9.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.9.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.9.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.9.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.9.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.9.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.10.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.10.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.10.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.10.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.10.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.10.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.10.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.10.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.11.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.11.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.11.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.11.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.11.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.11.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.11.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.11.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.12.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.12.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.12.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.12.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.12.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.12.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.12.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.12.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.13.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.13.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.13.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.13.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.13.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.13.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.13.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.13.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.14.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.14.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.14.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.14.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.14.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.14.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.14.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.14.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.15.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.15.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.15.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.15.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.15.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.15.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.15.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.15.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.16.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.16.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.16.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.16.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.16.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.16.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.16.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.16.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.17.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.17.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.17.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.17.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.17.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.17.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.17.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.17.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.18.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.18.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.18.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.18.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.18.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.18.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.18.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.18.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.19.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.19.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.19.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.19.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.19.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.19.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.19.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.19.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.20.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.20.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.20.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.20.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.20.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.20.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.20.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.20.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.21.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.21.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.21.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.21.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.21.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.21.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.21.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.21.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.22.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.22.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.22.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.22.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.22.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.22.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.22.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.22.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.23.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.23.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.23.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.23.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.23.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.23.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.23.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.23.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.24.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.24.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.24.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.24.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.24.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.24.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.24.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.24.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.25.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.25.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.25.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.25.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.25.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.25.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.25.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.25.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.26.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.26.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.26.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.26.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.26.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.26.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.26.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.26.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.27.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.27.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.27.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.27.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.27.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.27.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.27.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.27.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.28.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.28.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.28.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.28.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.28.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.28.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.28.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.28.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.29.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.29.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.29.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.29.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.29.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.29.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.29.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.29.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.30.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.30.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.30.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.30.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.30.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.30.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.30.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.30.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.31.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.31.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.31.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.31.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.31.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.31.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.31.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.31.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.32.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.32.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.32.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.32.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.32.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.32.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.32.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.32.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.33.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.33.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.33.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.33.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.33.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.33.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.33.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.33.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.34.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.34.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.34.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.34.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.34.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.34.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.34.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.34.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.35.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.35.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.35.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.35.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.35.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.35.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.35.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.35.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.36.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.36.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.36.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.36.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.36.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.36.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.36.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.36.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.37.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.37.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.37.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.37.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.37.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.37.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.37.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.37.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.38.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.38.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.38.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.38.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.38.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.38.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.38.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.38.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.39.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.39.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.39.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.0.39.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.39.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.39.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.0.39.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.0.39.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.0.40.0.weight 
+param.shape:torch.Size([320, 80, 3, 3]) 
+param.shape:230400 
+======================================
+name:up_blocks.0.40.0.bias 
+param.shape:torch.Size([320]) 
+param.shape:320 
+======================================
+name:up_blocks.0.41.weight 
+param.shape:torch.Size([40, 80, 1, 1]) 
+param.shape:3200 
+======================================
+name:up_blocks.0.41.bias 
+param.shape:torch.Size([40]) 
+param.shape:40 
+======================================
+name:up_blocks.1.0.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.0.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.0.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.0.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.0.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.0.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.0.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.0.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.1.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.1.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.1.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.1.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.1.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.1.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.1.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.1.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.2.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.2.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.2.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.2.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.2.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.2.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.2.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.2.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.3.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.3.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.3.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.3.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.3.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.3.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.3.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.3.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.4.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.4.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.4.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.4.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.4.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.4.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.4.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.4.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.5.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.5.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.5.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.5.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.5.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.5.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.5.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.5.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.6.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.6.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.6.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.6.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.6.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.6.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.6.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.6.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.7.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.7.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.7.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.7.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.7.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.7.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.7.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.7.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.8.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.8.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.8.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.8.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.8.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.8.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.8.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.8.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.9.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.9.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.9.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.9.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.9.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.9.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.9.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.9.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.10.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.10.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.10.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.10.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.10.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.10.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.10.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.10.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.11.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.11.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.11.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.11.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.11.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.11.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.11.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.11.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.12.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.12.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.12.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.12.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.12.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.12.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.12.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.12.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.13.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.13.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.13.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.13.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.13.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.13.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.13.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.13.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.14.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.14.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.14.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.14.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.14.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.14.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.14.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.14.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.15.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.15.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.15.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.15.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.15.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.15.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.15.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.15.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.16.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.16.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.16.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.16.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.16.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.16.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.16.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.16.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.17.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.17.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.17.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.17.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.17.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.17.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.17.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.17.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.18.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.18.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.18.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.18.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.18.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.18.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.18.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.18.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.19.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.19.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.19.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.19.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.19.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.19.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.19.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.19.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.20.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.20.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.20.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.20.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.20.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.20.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.20.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.20.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.21.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.21.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.21.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.21.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.21.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.21.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.21.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.21.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.22.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.22.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.22.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.22.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.22.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.22.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.22.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.22.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.23.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.23.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.23.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.23.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.23.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.23.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.23.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.23.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.24.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.24.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.24.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.24.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.24.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.24.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.24.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.24.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.25.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.25.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.25.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.25.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.25.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.25.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.25.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.25.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.26.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.26.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.26.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.26.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.26.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.26.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.26.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.26.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.27.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.27.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.27.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.27.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.27.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.27.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.27.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.27.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.28.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.28.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.28.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.28.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.28.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.28.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.28.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.28.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.29.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.29.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.29.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.29.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.29.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.29.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.29.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.29.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.30.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.30.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.30.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.30.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.30.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.30.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.30.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.30.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.31.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.31.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.31.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.31.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.31.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.31.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.31.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.31.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.32.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.32.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.32.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.32.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.32.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.32.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.32.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.32.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.33.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.33.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.33.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.33.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.33.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.33.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.33.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.33.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.34.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.34.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.34.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.34.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.34.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.34.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.34.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.34.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.35.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.35.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.35.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.35.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.35.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.35.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.35.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.35.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.36.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.36.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.36.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.36.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.36.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.36.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.36.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.36.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.37.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.37.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.37.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.37.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.37.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.37.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.37.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.37.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.38.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.38.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.38.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.38.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.38.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.38.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.38.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.38.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.39.body.0.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.39.body.0.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.39.body.2.weight 
+param.shape:torch.Size([80, 80, 3, 3]) 
+param.shape:57600 
+======================================
+name:up_blocks.1.39.body.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.39.body.3.conv_du.0.weight 
+param.shape:torch.Size([5, 80, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.39.body.3.conv_du.0.bias 
+param.shape:torch.Size([5]) 
+param.shape:5 
+======================================
+name:up_blocks.1.39.body.3.conv_du.2.weight 
+param.shape:torch.Size([80, 5, 1, 1]) 
+param.shape:400 
+======================================
+name:up_blocks.1.39.body.3.conv_du.2.bias 
+param.shape:torch.Size([80]) 
+param.shape:80 
+======================================
+name:up_blocks.1.40.0.weight 
+param.shape:torch.Size([320, 80, 3, 3]) 
+param.shape:230400 
+======================================
+name:up_blocks.1.40.0.bias 
+param.shape:torch.Size([320]) 
+param.shape:320 
+======================================
+name:up_blocks.1.41.weight 
+param.shape:torch.Size([20, 80, 1, 1]) 
+param.shape:1600 
+======================================
+name:up_blocks.1.41.bias 
+param.shape:torch.Size([20]) 
+param.shape:20 
+======================================
+name:tail.0.weight 
+param.shape:torch.Size([3, 80, 3, 3]) 
+param.shape:2160 
+======================================
+name:tail.0.bias 
+param.shape:torch.Size([3]) 
+param.shape:3 
+======================================
+name:tail.1.weight 
+param.shape:torch.Size([3, 80, 3, 3]) 
+param.shape:2160 
+======================================
+name:tail.1.bias 
+param.shape:torch.Size([3]) 
+param.shape:3 
+======================================
+name:tail.2.weight 
+param.shape:torch.Size([3, 40, 3, 3]) 
+param.shape:1080 
+======================================
+name:tail.2.bias 
+param.shape:torch.Size([3]) 
+param.shape:3 
+======================================
+name:add_mean.weight 
+param.shape:torch.Size([3, 3, 1, 1]) 
+param.shape:9 
+======================================
+name:add_mean.bias 
+param.shape:torch.Size([3]) 
+param.shape:3 
+======================================
+
+The number of parameters : 9825893 - about 9.83M
+
+Parameters of sub_mean : 12
+
+Parameters of head : 560
+
+Parameters of down_block : 54000
+
+Parameters of up_block_0 : 4883760 - about 4.88M
+
+Parameters of up_block_1 : 4882140 - about 4.88M
+
+Parameters of tail : 5409
+
+Parameters of add_mean : 12
+
+From sub_mean to add_mean
+
+12 560 54000 4883760 4882140 5409 12
