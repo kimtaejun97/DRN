@@ -5,7 +5,10 @@ import torch.nn as nn
 from model.common import DownBlock
 import model.drn
 from option import args
+<<<<<<< HEAD
 import sys
+=======
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
 
 
 def dataparallel(model, gpu_list):
@@ -55,9 +58,13 @@ class Model(nn.Module):
             print(self.dual_models, file=ckp.log_file)
         
         # compute parameter
+<<<<<<< HEAD
         # print(model.)
         ratio = args.ratio
         num_parameter = self.count_parameters(self.model, ratio)
+=======
+        num_parameter = self.count_parameters(self.model)
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
         ckp.write_log(f"The number of parameters is {num_parameter / 1000 ** 2:.2f}M")
 
     def forward(self, x, idx_scale=0):
@@ -83,6 +90,7 @@ class Model(nn.Module):
         target = self.get_model()
         return target.state_dict(**kwargs)
     
+<<<<<<< HEAD
     def count_parameters(self, model, ratio):
         # DRN's Scale factor
         ratio = ratio
@@ -151,10 +159,20 @@ class Model(nn.Module):
         # torch.save: 직렬화된 객체를 디스크에 저장한다.
         # 이 함수는 Python의 pickle 을 사용하여 직렬화한다.
         # 이 함수를 사용하여 모든 종류의 객체의 모델, Tensor 및 사전을 저장할 수 있다.
+=======
+    def count_parameters(self, model):
+        if self.opt.n_GPUs > 1:
+            return sum(p.numel() for p in model.parameters() if p.requires_grad)
+        return sum(p.numel() for p in model.parameters() if p.requires_grad)
+
+    def save(self, path, is_best=False):
+        target = self.get_model()
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
         torch.save(
             target.state_dict(), 
             os.path.join(path, 'model', args.data_train +'_latest_x'+str(args.scale[len(args.scale)-1])+'.pt')
         )
+<<<<<<< HEAD
 
         RCAB_num = int(args.n_blocks)
         route = './DRN_params/(X%d)State_dict.txt'%args.ratio
@@ -171,6 +189,8 @@ class Model(nn.Module):
         dict_file.write(str(weight_dic))
         dict_file.close()
 
+=======
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
         if is_best:
             torch.save(
                 target.state_dict(),
