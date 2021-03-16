@@ -93,7 +93,11 @@ class DRN(nn.Module):
         x = self.sub_mean(x)
         x = self.head(x)
 
+<<<<<<< HEAD
         # down phases, Copies에 append 하고 x를 downsampling
+=======
+        # down phases,
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
         copies = []
         for idx in range(self.phase):
             copies.append(x)
@@ -121,4 +125,8 @@ class DRN(nn.Module):
 
             results.append(sr)
 
+<<<<<<< HEAD
         return results 
+=======
+        return results
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15

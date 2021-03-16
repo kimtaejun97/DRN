@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 '''
 
 Save function : Weight, Loss, Plot save  !
 
 '''
 
+=======
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
 import os
 import torch
 import datetime
@@ -43,11 +46,16 @@ class Checkpoint():
             f.write('\n')
 
     def save(self, trainer, epoch, is_best=False):
+<<<<<<< HEAD
         # Weight saved here!
         trainer.model.save(self.dir, is_best=is_best)
         # Loss saved here!
         trainer.loss.save(self.dir)
         # Plot saved here!
+=======
+        trainer.model.save(self.dir, is_best=is_best)
+        trainer.loss.save(self.dir)
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
         trainer.loss.plot_loss(self.dir, epoch)
 
         self.plot_psnr(epoch)
@@ -56,7 +64,10 @@ class Checkpoint():
             trainer.optimizer.state_dict(),
             os.path.join(self.dir, 'optimizer.pt')
         )
+<<<<<<< HEAD
         # dual save
+=======
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
         dual_optimizers = {}
         for i in range(len(trainer.dual_optimizers)):
             dual_optimizers[i] = trainer.dual_optimizers[i]

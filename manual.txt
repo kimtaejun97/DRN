@@ -1,9 +1,19 @@
+<<<<<<< HEAD
+=======
+# Dependencies
+Python>=3.7, PyTorch>=1.1, numpy, skimage, imageio, matplotlib, tqdm
+
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
 ---------------------------Train-------------------------------
 #커맨드 입력 형식
 python main.py --data_dir [root data dir] --scale [scale] --data_train [train data dir] --data_test [test data dir] --model [DRN-L|DRN-S]  --save [save dir]  --save_results
 
 ex)
+<<<<<<< HEAD
 python main.py --data_dir ./dataset --scale 4 --ratio 4 --data_train face_data --data_test face_test --model DRN-L  --save ./experiments  --save_results
+=======
+python main.py --data_dir ./dataset --scale 4 --data_train face_data --data_test face_test --model DRN-L  --save ./experiments  --save_results
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
 
  -위와 같이 입력하면 4배율의 scale,  ./dataset/face_data의 데이터를 훈련데이터로, ./dataset/benchmark/face_test를 테스트 데이터로 사용하여 훈련을 진행합니다.  --save_results는 결과를 저장하고 싶을때 사용합니다.
 훈련을 이어서 진행하고 싶을 때 는 아래 Test 명령어에서 --pre_train, --pre_trained_dual 옵션을 사용하여 이전 훈련 모델을 불러올 수 있습니다.
@@ -19,8 +29,12 @@ python main.py --data_dir [root data dir] --save [save dir] --data_test [test da
 ex)
 python main.py --data_dir ./dataset --save ./experiments --data_test face_test --scale 4 --model DRN-L --pre_train  ./trained_models/face_trained_x4.pt --pre_train_dual  ./trained_models/face_trained_dual_x4.pt --test_only --save_results
 
+<<<<<<< HEAD
   -위와 같이 커맨더 창에 입력하면 ./experiments/result 에 테스트 결과가 저장되고 테스트셋의 경로는 ./dataset/benchmark/face_test 가 됩니다. 이 때 이용하는 모델은 ./trained_models/face_trained_x4.pt와 ./trained_models/face_trained_dual_x4.pt입니다. 
   --test_only는 훈련이 아닌 테스트만 진행할 때 입력하는 명령어이고, 
+=======
+  -위와 같이 커맨더 창에 입력하면 ./experiments/result 에 테스트 결과가 저장되고 테스트셋의 경로는 ./dataset/benchmark/face_test 가 됩니다. 이 때 이용하는 모델은 ./trained_models/face_trained_x4.pt와 ./trained_models/face_trained_dual_x4.pt입니다.  --test_only는 훈련이 아닌 테스트만 진행할 때 입력하는 명령어이고, 
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
 
 *DRN-L과 DRN-S의 차이는 파라미터의 수 입니다. DRN-L의 파라미터 수가 더 많아 더 좋은 결과를 얻을 수 있습니다.
 
@@ -40,7 +54,11 @@ LR이미지는[root data dir]/benchmark/[test data dir]/LR_bicubic/xscale(ex x4)
 
 -consistency loss 및 emsemble loss 사용은 trainer.py 주석해제, 해당 loss를 total loss 에 추가.
 
+<<<<<<< HEAD
 No module named 'skimage.measure' -> 0.17.2
 scikit-image==0.17.2
+=======
+
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
 
 

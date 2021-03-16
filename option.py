@@ -22,7 +22,11 @@ parser.add_argument('--data_range', type=str, default='',
                     help='train/test data range')
 parser.add_argument('--scale', type=int, default=4,
                     help='super resolution scale')
+<<<<<<< HEAD
 parser.add_argument('--patch_size', type=int, default=16,
+=======
+parser.add_argument('--patch_size', type=int, default=12,
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
                     help='output patch size')
 parser.add_argument('--rgb_range', type=int, default=255,
                     help='maximum value of RGB')
@@ -41,9 +45,15 @@ parser.add_argument('--n_feats', type=int, default=16,
                     help='number of feature maps')
 parser.add_argument('--negval', type=float, default=0.2,
                     help='Negative value parameter for Leaky ReLU')
+<<<<<<< HEAD
 parser.add_argument('--test_every', type=int, default =1,
                     help='do test per every N batches')
 parser.add_argument('--epochs', type=int, default=3000,
+=======
+parser.add_argument('--test_every', type=int, default =10000,
+                    help='do test per every N batches')
+parser.add_argument('--epochs', type=int, default=1000,
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
                     help='number of epochs to train')
 parser.add_argument('--batch_size', type=int, default=8,
                     help='input batch size for training')
@@ -75,8 +85,11 @@ parser.add_argument('--print_every', type=int, default=100,
                     help='how many batches to wait before logging training status')
 parser.add_argument('--save_results', action='store_true',
                     help='save output results')
+<<<<<<< HEAD
 parser.add_argument('--ratio', type=int, default=4,
                     help='save output results')
+=======
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
 
 args = parser.parse_args()
 

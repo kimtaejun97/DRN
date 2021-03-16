@@ -12,5 +12,9 @@ class face_test(srdata.SRData):
         self.apath = os.path.join(data_dir, 'benchmark', self.name)
         self.dir_hr = os.path.join(self.apath, 'HR')
         self.dir_lr = os.path.join(self.apath, 'LR_bicubic')
+<<<<<<< HEAD
         self.ext = ('', '.jpg')
+=======
+        self.ext = ('', '.png')
+>>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
 
