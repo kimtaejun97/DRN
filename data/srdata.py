@@ -72,7 +72,7 @@ class SRData(data.Dataset):
         self.apath = os.path.join(data_dir, self.name)
         self.dir_hr = os.path.join(self.apath, 'HR')
         self.dir_lr = os.path.join(self.apath, 'LR_bicubic')
-        self.ext = ('.jpg', '.jpg')
+        self.ext = ('.png', '.png')
 
     def _get_index(self, idx):
         if self.train:

@@ -46,6 +46,7 @@ class Trainer():
         timer_data, timer_model = utility.timer(), utility.timer()
         for batch, (lr, hr, _) in enumerate(self.loader_train):
             lr, hr = self.prepare(lr, hr)
+            
 
             # flip train
             # flip_lr = copy.deepcopy(lr)
@@ -175,11 +176,7 @@ class Trainer():
 
                         eval_psnr +=psnr
 
-<<<<<<< HEAD
                     # save test results // SR result !
-=======
-                    # save test results
->>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
                     if self.opt.save_results:
                         self.ckp.save_results_nopostfix(filename, sr, s)
 
@@ -196,11 +193,6 @@ class Trainer():
                 )
                 print('SIMM:',eval_simm)
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
         self.ckp.write_log(
             'Total time: {:.2f}s\n'.format(timer_test.toc()), refresh=True
         )

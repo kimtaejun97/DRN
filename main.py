@@ -6,11 +6,7 @@ os.environ['KMP_DUPLICATE_LIB_OK']='True'
 import utility
 import data
 import model
-<<<<<<< HEAD
 import loss  
-=======
-import loss
->>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
 from option import args
 from checkpoint import Checkpoint
 from trainer import Trainer
@@ -23,7 +19,6 @@ checkpoint = Checkpoint(args)
 if checkpoint.ok:
     loader = data.Data(args)
     model = model.Model(args, checkpoint)
-<<<<<<< HEAD
     # For save Weights of RCAB seperately
     # target = model.model
     # RCAB_num = int(args.n_blocks)
@@ -39,8 +34,6 @@ if checkpoint.ok:
     # dict_file.write(str(weight_dic))
     # dict_file.close()
 
-=======
->>>>>>> 218fc1f47a97414209ef1517938d306a8aca5c15
     loss = loss.Loss(args, checkpoint) if not args.test_only else None
     t = Trainer(args, loader, model, loss, checkpoint)
     def main():

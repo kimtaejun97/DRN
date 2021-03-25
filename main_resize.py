@@ -22,9 +22,9 @@ def main():
     # Preparation
     # ----------------------------------------
     model_name = 'usrnet'      # 'usrgan' | 'usrnet' | 'usrgan_tiny' | 'usrnet_tiny'
-    testset_name = 'HR'     # test set,  'set5' | 'srbsd68'
+    testset_name = 'face_data_HR'     # test set,  'set5' | 'srbsd68'
     need_degradation = True    # default: True
-    sf = 2                    # scale factor, only from {2, 3, 4}
+    sf = 4                    # scale factor, only from {2, 3, 4}
     show_img = False           # default: False
     save_L = True              # save LR image
 
@@ -32,8 +32,8 @@ def main():
     task_current = 'sr'       # fixed, 'sr' for super-resolution
     n_channels = 3            # fixed, 3 for color image
     model_pool = 'model_zoo'  # fixed
-    testsets = 'dataset/benchmark/face_test'     # fixed
-    results = 'dataset/benchmark/face_test/LR_bicubic'       # fixed
+    testsets = 'dataset/face_data'     # fixed
+    results = 'dataset/face_data/face_data_LR_bicubic'       # fixed
 
     result_name = testset_name + '_' + model_name + '_bicubic'
 
