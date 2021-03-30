@@ -19,6 +19,7 @@ checkpoint = Checkpoint(args)
 if checkpoint.ok:
     loader = data.Data(args)
     model = model.Model(args, checkpoint)
+    
     # For save Weights of RCAB seperately
     # target = model.model
     # RCAB_num = int(args.n_blocks)

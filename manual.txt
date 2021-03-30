@@ -5,6 +5,9 @@ python main.py --data_dir [root data dir] --scale [scale] --data_train [train da
 ex)
 python main.py --data_dir ./dataset --scale 4 --ratio 4 --data_train face_data --data_test face_test --model DRN-L  --save ./experiments  --save_results
 
+#gaze_train 
+python main.py --data_dir ./dataset --scale 4 --ratio 4 --data_train face_data --data_test face_test --model DRN-L --pre_train ./trained_models/face_trained_x4.pt --pre_train_dual ./trained_models/face_trained_dual_x4.pt  --save ./experiments  --save_results --gaze_train True
+
  -위와 같이 입력하면 4배율의 scale,  ./dataset/face_data의 데이터를 훈련데이터로, ./dataset/benchmark/face_test를 테스트 데이터로 사용하여 훈련을 진행합니다.  --save_results는 결과를 저장하고 싶을때 사용합니다.
 훈련을 이어서 진행하고 싶을 때 는 아래 Test 명령어에서 --pre_train, --pre_trained_dual 옵션을 사용하여 이전 훈련 모델을 불러올 수 있습니다.
 -훈련된 모델은 expriment/model에 저장됩니다.

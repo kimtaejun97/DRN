@@ -13,6 +13,13 @@ import matplotlib
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import copy
+import h5py
+import os
+import cv2
+import numpy as np
+from torchvision.utils import save_image
+from getGazeLoss import *
+
 
 class Trainer():
     def __init__(self, opt, loader, my_model, my_loss, ckp):
@@ -30,13 +37,16 @@ class Trainer():
         self.dual_scheduler = utility.make_dual_scheduler(opt, self.dual_optimizers)
         self.error_last = 1e8
 
+
     def train(self):
+        label_txt = open("dataset/integrated_label.txt" , "r")
+        labels = label_txt.readlines()
+        batch_gaze_loss=[]
+        
         epoch = self.scheduler.last_epoch + 1
         lr = self.scheduler.get_lr()[0]
-
-
+       
         self.ckp.set_epoch(epoch)
-
 
         self.ckp.write_log(
             '[Epoch {}]\tLearning rate: {:.2e}'.format(epoch, Decimal(lr))
@@ -44,19 +54,9 @@ class Trainer():
         self.loss.start_log()
         self.model.train()
         timer_data, timer_model = utility.timer(), utility.timer()
-        for batch, (lr, hr, _) in enumerate(self.loader_train):
+        for batch, (lr, hr, image_names) in enumerate(self.loader_train):
             lr, hr = self.prepare(lr, hr)
             
-
-            # flip train
-            # flip_lr = copy.deepcopy(lr)
-
-            # for i in range(0,len(flip_lr)):
-            #     for j in range(0, len(flip_lr[i])):
-            #         for k in range(0, len(flip_lr[i][j])):
-            #             flip_lr[i][j][k]= torch.fliplr(flip_lr[i][j][k])
-            
-        
             timer_data.hold()
             timer_model.tic()
             
@@ -65,20 +65,10 @@ class Trainer():
             for i in range(len(self.dual_optimizers)):
                 self.dual_optimizers[i].zero_grad()
 
+
             # forward
-           
             sr = self.model(lr[0])
-
-            # flip train
-            # flip_sr = self.model(flip_lr[0])
-
-            # for i in range(0, len(flip_sr)):
-            #     for j in range(0, len(flip_sr[i])):
-            #         for k in range(0, len(flip_sr[i][j])):
-            #             flip_sr[i][j][k] = torch.fliplr(flip_sr[i][j][k])
-            # fflip_sr = flip_sr
-
-            
+           
             sr2lr = []
             for i in range(len(self.dual_models)):
                 sr2lr_i = self.dual_models[i](sr[i - len(self.dual_models)])
@@ -95,19 +85,31 @@ class Trainer():
             for i in range(1, len(self.scale)):
                 loss_dual += self.loss(sr2lr[i], lr[i])
 
-            # compute average loss
-            # average_feat =(sr[-1]+fflip_sr[-1])/2
-            # loss_average = self.loss(average_feat, hr)
-
+            #-----------------clear dir---------------------------
+            clearDir()
+            # -------------------save SR image ------------
+            image_root_path = "./train_SRImage"
             
+            face_path = os.path.join(image_root_path, "face")
+            os.makedirs(face_path, exist_ok = True)
+            for i in range(len(sr[-1])):
+                save_image(sr[-1][i]/255, (os.path.join(face_path, image_names[i]+'.png')))
+            
+            #---------------GenerateEyePatches-------------------
+            generateEyePatches()
 
-            #copute flip loss
-            loss_flip =0
-            # for i in range(0, len(sr)):
-            #     loss_flip+= self.loss(sr[i], fflip_sr[i])
+            #-------------------Generate h5 Dataset---------------
+            # generateH5Dataset()
 
+            # ------------------compute gaze_loss----------------
+            gaze_loss = computeGazeLoss(labels)
+            self.ckp.write_log("GE_Loss : "+str(gaze_loss.item()))
+            batch_gaze_loss.append(gaze_loss.item())
+            
             # compute total loss
-            loss =  loss_primary+ self.opt.dual_weight * loss_dual
+            loss =  loss_primary+ self.opt.dual_weight * loss_dual +gaze_loss
+
+
             
             if loss.item() < self.opt.skip_threshold * self.error_last:
                 loss.backward()                
@@ -130,6 +132,34 @@ class Trainer():
                     timer_data.release()))
 
             timer_data.tic()
+        
+        #------------draw gaze loss graph -----------
+        epoch_gaze_loss = 0 
+        for loss in batch_gaze_loss:
+            epoch_gaze_loss +=loss
+        epoch_gaze_loss /=self.opt.test_every
+        log_path = "experiments/gaze_loss.log"
+        if epoch ==1:
+            lf =open(log_path, "w+")
+        else:
+            lf = open(log_path, "a")
+        lf.write(str(epoch_gaze_loss)+"\n")
+        lf.close()
+
+        gaze_logs = []
+        lf = open(log_path, "r")
+        gaze_log = lf.readline()
+        while(gaze_log !=""):
+            gaze_logs.append(float(gaze_log))
+            gaze_log = lf.readline()
+        
+        axis = np.linspace(1, epoch, epoch)
+        y = gaze_logs
+        plt.xlabel('epoch')
+        plt.ylabel('GE_loss')
+        plt.grid(True)
+        plt.plot(axis,gaze_logs, 'b-')
+        plt.savefig('experiments/gaze_loss.pdf')
 
         self.loss.end_log(len(self.loader_train))
         self.error_last = self.loss.log[-1, -1]
@@ -177,8 +207,9 @@ class Trainer():
                         eval_psnr +=psnr
 
                     # save test results // SR result !
-                    if self.opt.save_results:
-                        self.ckp.save_results_nopostfix(filename, sr, s)
+                    if epoch %20 == 0: 
+                        if self.opt.save_results:
+                            self.ckp.save_results_nopostfix(filename, sr, s)
 
                 self.ckp.log[-1, si] = eval_psnr / len(self.loader_test)
                 eval_simm = eval_simm / len(self.loader_test)

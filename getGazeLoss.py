@@ -1,50 +1,68 @@
-from rt_gent.gaze_estimation_models_pytorch import GazeEstimationModelVGG
+from rt_gene.gaze_estimation_models_pytorch import GazeEstimationModelVGG
 import torch
+from functools import partial
+from rt_gene.extract_landmarks_method_base import LandmarkMethodBase
+import os
+import sys
+import cv2
+from torchvision import datasets
+from torchvision import transforms
+import torch.nn as nn
 
 
- _loss_fn = {
+_loss_fn = {
             "mse": partial(torch.nn.MSELoss, reduction="sum")
         }
 _param_num = {
     "mse": 2
 }
 _models = {
-            "vgg": partial(GazeEstimationModelVGG, num_out=_param_num.get(hparams.loss_fn)) 
+            "vgg": partial(GazeEstimationModelVGG, num_out=_param_num.get("mse")) 
         }
+image_root_path = "./train_SRImage"
+left_path = os.path.join(image_root_path, "left","l")
+right_path = os.path.join(image_root_path, "right","r")
+face_path =os.path.join(image_root_path, "face")
 
+os.makedirs(left_path, exist_ok = True)
+os.makedirs(right_path, exist_ok = True)
+os.makedirs(face_path, exist_ok = True)
 
+def clearDir():
+        face_list = os.listdir(face_path)
+        left_list = os.listdir(left_path)
+        right_list = os.listdir(right_path)
+
+        for face in face_list:
+            _face = os.path.join(face_path,face)
+            os.remove(_face)
+        for i in range(len(left_list)):
+            _left = os.path.join(left_path,left_list[i])
+            _right = os.path.join(right_path,right_list[i])
+            os.remove(_left)
+            os.remove(_right)
 
 def generateEyePatches():
-    image_root_path = "./train_SRImage"
-
     landmark_estimator = LandmarkMethodBase(device_id_facedetection="cuda:0",
-                                            checkpoint_path_face=os.path.join(script_path, "/../rt_gene/rt_gene/model_nets/SFD/s3fd_facedetector.pth"),
-                                            checkpoint_path_landmark=os.path.join(script_path, "/../rt_gene/rt_gene/model_nets/phase1_wpdc_vdc.pth.tar"),
-                                            model_points_file=os.path.join(script_path, "/../rt_gene/rt_gene/model_nets/face_model_68.txt"))
+                                            checkpoint_path_face= "rt_gene/model_nets/SFD/s3fd_facedetector.pth",
+                                            checkpoint_path_landmark="rt_gene/model_nets/phase1_wpdc_vdc.pth.tar",
+                                            model_points_file="rt_gene/model_nets/face_model_68.txt")
 
-    image_path = os.path.join(image_root_path, "SRImage")
-    
-
-    left_path = os.path.join(image_root_path, "left")
-    right_path = os.path.join(image_root_path, "right")
-
-    os.makedirs(left_path, exist_ok = True)
-    os.makedirs(right_path, exist_ok = True)
-
-    image_list = os.listdir(image_path)
-
+    image_list = os.listdir(face_path)
     for image_file_name in image_list:
-        image = cv2.imread(os.path.join(image_path, image_file_name))
+        image = cv2.imread(os.path.join(face_path, image_file_name))
         if image is None:
             continue
 
-        faceboxes = landmark_estimator.get_face_bb(image)
+        # faceboxes = landmark_estimator.get_face_bb(image)
+        faceboxes = [[0,0,223,223]]
         if len(faceboxes) == 0:
             continue
 
         subjects = landmark_estimator.get_subjects_from_faceboxes(image, faceboxes)
         for subject in subjects:
-            le_c, re_c, _, _ = subject.get_eye_image_from_landmarks(subject.transformed_eye_landmarks, subject.face_color, landmark_estimator.eye_image_size)
+            # le_c, re_c, _, _ = subject.get_eye_image_from_landmarks(subject.transformed_eye_landmarks, subject.face_color, landmark_estimator.eye_image_size)
+            le_c, re_c, _, _,_,_ = subject.get_eye_image_from_landmarks(subject, landmark_estimator.eye_image_size)
 
             if le_c is not None and re_c is not None:
                 img_name = image_file_name.split(".")[0]
@@ -61,68 +79,82 @@ def computeGazeLoss(labels):
     _model = _models.get("vgg")()
     _criterion = _loss_fn.get("mse")()
 
+    # load image
+    left_root = os.path.join(image_root_path,"left")
+    right_root = os.path.join(image_root_path,"left")
 
-     # load image
-    image_root_path = "./train_SRImage"
+    transform = transforms.Compose([transforms.Resize((224,224)), transforms.ToTensor()])
+    left_set = datasets.ImageFolder(left_root, transform = transform)
+    right_set = datasets.ImageFolder(right_root, transform = transform)
 
-    left_eye_path = os.path.join(image_root_path, left_path)
-    rigth_eye_path = os.path.join(image_root_path, right_path)
-    left_list = os.listdir(left_eye_path)
-    right_list =os.listdir(rigth_eye_path)
+    left_dataloader = torch.utils.data.DataLoader(left_set, batch_size=len(left_set), shuffle=False)
+    right_dataloader = torch.utils.data.DataLoader(right_set, batch_size=len(right_set), shuffle=False)
 
+    left_list, _= next(iter(left_dataloader))
+    right_list,_ = next(iter(right_dataloader))
+
+    left_list = left_list.requires_grad_(True)
+    right_list = right_list.requires_grad_(True)
+      
+    
     #load Label
-    gaze_batch_label = []
-    head_batch_label = []
-    head_batch_label, gaze_batch_label =loadLabel(labels)
-
-
+    left_names = os.listdir(left_path)
+    head_batch_label, gaze_batch_label =loadLabel(labels,left_names)
     angular_out = _model(left_list, right_list, head_batch_label)
-    gaze_loss = _criterion(angular_out, gaze_batch_label)
+    gaze_loss = _criterion(angular_out, gaze_batch_label).cuda()
 
     return gaze_loss
 
 
 
-def loadLabel(labels):
+def loadLabel(labels,names):
     gaze_batch_label = []
     head_batch_label = []
     flag = False
 
     #load label
-    for image_name in image_names:
-        subj = image_name.split('_')[0]
-        file_num = image_name.split('_')[1]
-
-        start = 0
-        end = len(labels) -1
-        mid = (start + end) //2
-
+    for name in names:
+        #image name 형식: left_s000_1
+        subj = name.split('_')[1]
+        file_num = name.split('_')[2].split('.')[0]
+        file_num = f'{file_num:0>6}'
+        image_name = subj+'_'+file_num
+        
+        
         #이진 탐색
         #label : idx, head1, head2, gaze1, gaze2, time
-        #image name 형식: s000_1
-        while end -start >=0:
+        start = 0
+        end = len(labels) -1
+        while start <=end:
+            mid = (start + end) // 2
             label = labels[mid].split(",")
-            if label[0] == image_name:
-                head_batch_label.append([label[1],label[2]])
-                gaze_batch_label.append([label[3],label[4]])
-                Flag =True
+            name_label = label[0].split("_")
+            curr_name = f'{name_label[0]}_{name_label[1]:0>6}'
+            if curr_name == image_name:
+                head_batch_label.append([float(label[1]),float(label[2])])
+                gaze_batch_label.append([float(label[3]),float(label[4])])
+                flag =True
                 break
-            elif label[0] < image_name:
+            elif curr_name < image_name:
                 start = mid+1
             else:
                 end = mid-1
+
         if not flag:
             print("ERROR:: label not found")
             sys.exit()
-        flag =True
+        flag =False
+
+    head_batch_label= torch.FloatTensor(head_batch_label)
+    gaze_batch_label = torch.FloatTensor(gaze_batch_label)
 
     return head_batch_label, gaze_batch_label
 
 
-def generateH5Dataset():
+# def generateH5Dataset():
     # script_path = os.path.dirname(os.path.realpath(__file__))
-            # _required_size = (224, 224)
-            # subject_path ="./SRImage_to_h5/SR_Image"
-            # h5_root = "./SRImage_to_h5/h5"
+    # _required_size = (224, 224)
+    # subject_path ="./SRImage_to_h5/SR_Image"
+    # h5_root = "./SRImage_to_h5/h5"
 
-            # hdf_file = h5py.File(os.path.join(h5_root, 'batch_SR.hdf5')), mode='w')
+    # hdf_file = h5py.File(os.path.join(h5_root, 'batch_SR.hdf5')), mode='w')

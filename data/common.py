@@ -4,7 +4,9 @@ import skimage.color as sc
 import torch
 
 
-def get_patch(*args, patch_size=96, scale=[2], multi_scale=False):
+def get_patch(*args, patch_size=96, scale=[2], multi_scale=False, gaze_train = False):
+    if gaze_train:
+        return args
     th, tw = args[-1].shape[:2] # target images size
 
     tp = patch_size  # patch size of target hr image

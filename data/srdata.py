@@ -103,7 +103,8 @@ class SRData(data.Dataset):
                 hr,
                 patch_size=self.args.patch_size,
                 scale=scale,
-                multi_scale=multi_scale
+                multi_scale=multi_scale,
+                gaze_train = self.args.gaze_train
             )
             if not self.args.no_augment:
                 lr, hr = common.augment(lr, hr)

@@ -3,3 +3,11 @@
 *.zip
 *.jpg
 *.mp4
+*.pdf
+*.log
+*.pt
+*.model
+*.h5
+*.tar
+*.dat
+*.pkl
