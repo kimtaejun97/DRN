@@ -98,16 +98,15 @@ class Trainer():
             #---------------GenerateEyePatches-------------------
             generateEyePatches()
 
-            #-------------------Generate h5 Dataset---------------
-            # generateH5Dataset()
-
             # ------------------compute gaze_loss----------------
             gaze_loss = computeGazeLoss(labels)
+            gaze_loss *=5
             self.ckp.write_log("GE_Loss : "+str(gaze_loss.item()))
             batch_gaze_loss.append(gaze_loss.item())
             
             # compute total loss
-            loss =  loss_primary+ self.opt.dual_weight * loss_dual +gaze_loss
+            loss =  loss_primary + self.opt.dual_weight * loss_dual +gaze_loss
+          
 
 
             
