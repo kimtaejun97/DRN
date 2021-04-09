@@ -51,6 +51,7 @@ class GazeEstimationAbstractModel(nn.Module):
         eyes_headpose = torch.cat((eyes_x, headpose), dim=1)
 
         fc_output = self.fc(eyes_headpose)
+        
 
         return fc_output
 
@@ -225,6 +226,7 @@ class GazeEstimationModelVGG(GazeEstimationAbstractModel):
         super(GazeEstimationModelVGG, self).__init__()
         _left_model = models.vgg16(pretrained=True)
         _right_model = models.vgg16(pretrained=True)
+       
 
         # remove the last ConvBRelu layer
         _left_modules = [module for module in _left_model.features]

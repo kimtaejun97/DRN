@@ -16,9 +16,10 @@ _loss_fn = {
 _param_num = {
     "mse": 2
 }
-_models = {
-            "vgg": partial(GazeEstimationModelVGG, num_out=_param_num.get("mse")) 
-        }
+ckpt = "rt_gene/model_nets/Alldata_1px_all_epoch=5-val_loss=0.551.model"
+_model = GazeEstimationModelVGG(num_out =2)
+_model.load_state_dict(torch.load(ckpt))
+
 image_root_path = "./train_SRImage"
 left_path = os.path.join(image_root_path, "left","l")
 right_path = os.path.join(image_root_path, "right","r")
@@ -75,12 +76,11 @@ def generateEyePatches():
                 cv2.imwrite(right_image_path, re_c)
 
 def computeGazeLoss(labels):
-    _model = _models.get("vgg")()
     _criterion = _loss_fn.get("mse")()
 
     # load image
     left_root = os.path.join(image_root_path,"left")
-    right_root = os.path.join(image_root_path,"left")
+    right_root = os.path.join(image_root_path,"right")
 
     transform = transforms.Compose([transforms.Resize((224,224)), transforms.ToTensor()])
     left_set = datasets.ImageFolder(left_root, transform = transform)
@@ -100,6 +100,13 @@ def computeGazeLoss(labels):
     left_names = os.listdir(left_path)
     head_batch_label, gaze_batch_label =loadLabel(labels,left_names)
     angular_out = _model(left_list, right_list, head_batch_label)
+    # print("angular_out :",angular_out)
+    # diff =0
+    # for i in range(len(angular_out)):
+    #     for j in range(len(angular_out[i])):
+    #         diff += pow((angular_out[i][j]-gaze_batch_label[i][j]),2)
+
+    # print("sse  : ",diff)
     gaze_loss = _criterion(angular_out, gaze_batch_label).cuda()
 
     return gaze_loss

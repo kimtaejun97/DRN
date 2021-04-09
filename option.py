@@ -41,7 +41,7 @@ parser.add_argument('--n_feats', type=int, default=16,
                     help='number of feature maps')
 parser.add_argument('--negval', type=float, default=0.2,
                     help='Negative value parameter for Leaky ReLU')
-parser.add_argument('--test_every', type=int, default =50,
+parser.add_argument('--test_every', type=int, default =200,
                     help='do test per every N batches')
 parser.add_argument('--epochs', type=int, default=1000,
                     help='number of epochs to train')

@@ -36,6 +36,7 @@ class Trainer():
         self.dual_optimizers = utility.make_dual_optimizer(opt, self.dual_models)
         self.dual_scheduler = utility.make_dual_scheduler(opt, self.dual_optimizers)
         self.error_last = 1e8
+        self.endPoint_flag = False
 
 
     def train(self):
@@ -79,8 +80,10 @@ class Trainer():
             loss_primary = self.loss(sr[-1], hr)
             for i in range(1, len(sr)):
                 loss_primary += self.loss(sr[i - 1 - len(sr)], lr[i - len(sr)])
+            # loss_primary *=0.1
+        
             
-            # compute dual loss
+            # # compute dual loss
             loss_dual = self.loss(sr2lr[0], lr[0])
             for i in range(1, len(self.scale)):
                 loss_dual += self.loss(sr2lr[i], lr[i])
@@ -100,13 +103,14 @@ class Trainer():
 
             # ------------------compute gaze_loss----------------
             gaze_loss = computeGazeLoss(labels)
-            gaze_loss *=5
+            gaze_loss = gaze_loss.detach()
+            gaze_loss *=100
+            print(gaze_loss)
             self.ckp.write_log("GE_Loss : "+str(gaze_loss.item()))
             batch_gaze_loss.append(gaze_loss.item())
             
             # compute total loss
-            loss =  loss_primary + self.opt.dual_weight * loss_dual +gaze_loss
-          
+            loss = gaze_loss +loss_primary +loss_dual * self.opt.dual_weight
 
 
             
@@ -138,10 +142,12 @@ class Trainer():
             epoch_gaze_loss +=loss
         epoch_gaze_loss /=self.opt.test_every
         log_path = "experiments/gaze_loss.log"
+        
         if epoch ==1:
             lf =open(log_path, "w+")
         else:
             lf = open(log_path, "a")
+
         lf.write(str(epoch_gaze_loss)+"\n")
         lf.close()
 
@@ -152,6 +158,17 @@ class Trainer():
             gaze_logs.append(float(gaze_log))
             gaze_log = lf.readline()
         
+        min = gaze_logs[0]
+        max = gaze_logs[0]
+        for i in range(len(gaze_logs)):
+            if gaze_logs[i] <min:
+                min = gaze_logs[i]
+            if gaze_logs[i] > max:
+                max = gaze_logs[i]
+        
+        if epoch_gaze_loss <= min and epoch_gaze_loss >=max:
+            self.endPoint_flag = True
+
         axis = np.linspace(1, epoch, epoch)
         y = gaze_logs
         plt.xlabel('epoch')
@@ -206,7 +223,8 @@ class Trainer():
                         eval_psnr +=psnr
 
                     # save test results // SR result !
-                    if epoch %20 == 0: 
+                    
+                    if self.endPoint_flag:
                         if self.opt.save_results:
                             self.ckp.save_results_nopostfix(filename, sr, s)
 
