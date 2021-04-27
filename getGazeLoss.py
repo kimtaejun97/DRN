@@ -19,6 +19,8 @@ _param_num = {
 ckpt = "rt_gene/model_nets/Alldata_1px_all_epoch=5-val_loss=0.551.model"
 _model = GazeEstimationModelVGG(num_out =2)
 _model.load_state_dict(torch.load(ckpt))
+for name, param in _model.named_parameters():
+    param.requires_grad = False
 
 image_root_path = "./train_SRImage"
 left_path = os.path.join(image_root_path, "left","l")

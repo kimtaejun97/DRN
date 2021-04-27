@@ -80,7 +80,6 @@ class Trainer():
             loss_primary = self.loss(sr[-1], hr)
             for i in range(1, len(sr)):
                 loss_primary += self.loss(sr[i - 1 - len(sr)], lr[i - len(sr)])
-            # loss_primary *=0.1
         
             
             # # compute dual loss
@@ -103,7 +102,6 @@ class Trainer():
 
             # ------------------compute gaze_loss----------------
             gaze_loss = computeGazeLoss(labels)
-            gaze_loss = gaze_loss.detach()
             gaze_loss *=100
             print(gaze_loss)
             self.ckp.write_log("GE_Loss : "+str(gaze_loss.item()))
